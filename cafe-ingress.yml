@@ -11,6 +11,7 @@ metadata:
   name: cafe-ingress
   namespace: cafe
 spec:
+  ingressClassName: nginx      
   rules:
   - host: cafe.mylab.local
     http:
