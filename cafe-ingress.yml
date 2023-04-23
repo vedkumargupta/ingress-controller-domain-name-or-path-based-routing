@@ -16,12 +16,14 @@ spec:
     http:
       paths:
       - path: /tea
+        pathType: Prefix
         backend:
           service:
             name: tea-svc
             port:
               number: 80
       - path: /coffee
+        pathType: Prefix
         backend:
           service:
             name: coffee-svc
